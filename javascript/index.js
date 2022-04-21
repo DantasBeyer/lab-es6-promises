@@ -70,14 +70,31 @@ getInstruction("mashedPotatoes", 0, (step1) => {
 
 // Iteration 2 - using promises
 obtainInstruction('steak', 0)
-  .then ((step0) => {
+  .then ((step0) =>{
     document.querySelector("#steak").innerHTML += `<li>${step0}</li>`   
   })
-
+  .then ((step1) => {
+    document.querySelector("#steak").innerHTML += `<li>${step1}</li>`     
+  })
   .then ((step2) => {
     document.querySelector("#steak").innerHTML += `<li>${step2}</li>`     
   })
-// returning undefined !!
+  .then ((step3) => {
+    document.querySelector("#steak").innerHTML += `<li>${step3}</li>`     
+  })
+  .then ((step4) => {
+    document.querySelector("#steak").innerHTML += `<li>${step4}</li>`     
+  })
+  .then ((step5) => {
+    document.querySelector("#steak").innerHTML += `<li>${step5}</li>`     
+  })
+  .then ((step6) => {
+    document.querySelector("#steak").innerHTML += `<li>${step6}</li>`     
+  })
+  .then ((step7) => {
+    document.querySelector("#steak").innerHTML += `<li>${step7}</li>`     
+  })
+
 
 // Iteration 3 using async/await
 // ...
